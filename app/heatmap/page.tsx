@@ -10,10 +10,11 @@ export default async function HeatmapPage() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
       <Header />
-      <main className="mx-auto max-w-4xl px-4 py-8">
-        <h1 className="text-2xl font-bold mb-2">MST3K Top 5 Poll — Heatmap</h1>
+      <main className="mx-auto max-w-4xl px-8 py-8">
+        <h1 className="text-2xl font-bold mb-2">Heatmap</h1>
         <p className="text-zinc-600 dark:text-zinc-400 mb-6">
-          Rank distribution for top episodes. Rows = episode, columns = rank (#1–#5).
+          Rank distribution for top episodes. Rows = episode, columns = rank
+          (#1–#5).
         </p>
         <ChartHeatmap data={results} maxTitles={25} />
       </main>

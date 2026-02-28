@@ -23,12 +23,18 @@ interface RedditThing {
   };
 }
 
-const THREAD_URL = "https://www.reddit.com/comments/1rgqoys.json?limit=500";
+const THREAD_URL = "https://www.reddit.com/comments/1rgqoys.json?limit=1000";
 
-export async function fetchThread(): Promise<RedditComment[]> {
+export interface FetchThreadResult {
+  comments: RedditComment[];
+  /** Total comment count including deleted/removed (matches Reddit’s UI count) */
+  totalCommentCount: number;
+}
+
+export async function fetchThread(): Promise<FetchThreadResult> {
   const res = await fetch(THREAD_URL, {
     headers: { "User-Agent": "mst3k-poll-analyzer" },
-    next: { revalidate: 3600 },
+    next: { revalidate: 60 },
   });
 
   if (!res.ok) {
@@ -36,13 +42,30 @@ export async function fetchThread(): Promise<RedditComment[]> {
   }
 
   const json = await res.json();
-  // json[0] = post, json[1] = comments
   const commentListing = json[1];
   if (!commentListing?.data?.children) {
-    return [];
+    return { comments: [], totalCommentCount: 0 };
   }
 
-  return flattenComments(commentListing.data.children);
+  const children = commentListing.data.children as RedditThing[];
+  const totalCommentCount = countAllComments(children);
+  const comments = flattenComments(children);
+
+  return { comments, totalCommentCount };
+}
+
+/** Count every t1 (comment) node in the tree, including deleted/removed */
+function countAllComments(things: RedditThing[]): number {
+  let n = 0;
+  for (const thing of things) {
+    if (thing.kind !== "t1") continue;
+    n += 1;
+    const data = thing.data;
+    if (data?.replies && typeof data.replies === "object") {
+      n += countAllComments(data.replies.data?.children ?? []);
+    }
+  }
+  return n;
 }
 
 function flattenComments(things: RedditThing[]): RedditComment[] {

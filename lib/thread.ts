@@ -30,7 +30,7 @@ const TOP_N_FOR_GRAPH = 25;
 const MIN_EDGE_WEIGHT = 2;
 
 export async function getThreadAnalysis(): Promise<ThreadAnalysis> {
-  const comments = await fetchThread();
+  const { comments, totalCommentCount } = await fetchThread();
   const bodies = getAllCommentBodies(comments);
 
   const titleMap = buildTitleMap(episodes as EpisodeEntry[]);
@@ -49,7 +49,7 @@ export async function getThreadAnalysis(): Promise<ThreadAnalysis> {
 
   return {
     results: aggregated,
-    totalComments: comments.length,
+    totalComments: totalCommentCount,
     totalCommentsWithRanks: allMatches.filter((m) => m.length > 0).length,
     graph,
   };
