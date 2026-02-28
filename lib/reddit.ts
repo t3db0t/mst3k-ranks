@@ -31,9 +31,15 @@ export interface FetchThreadResult {
   totalCommentCount: number;
 }
 
+const REDDIT_USER_AGENT =
+  "Mozilla/5.0 (compatible; MST3KPollAnalyzer/1.0; +https://github.com/t3db0t/mst3k-ranks)";
+
 export async function fetchThread(): Promise<FetchThreadResult> {
   const res = await fetch(THREAD_URL, {
-    headers: { "User-Agent": "mst3k-poll-analyzer" },
+    headers: {
+      "User-Agent": REDDIT_USER_AGENT,
+      Accept: "application/json",
+    },
     next: { revalidate: 60 },
   });
 
