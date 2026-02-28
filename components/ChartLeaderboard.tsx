@@ -10,7 +10,10 @@ export interface LeaderboardEntry {
 
 export type LeaderboardMetric = "bordaScore" | "mentions";
 
-function getMetricValue(d: LeaderboardEntry, metric: LeaderboardMetric): number {
+function getMetricValue(
+  d: LeaderboardEntry,
+  metric: LeaderboardMetric,
+): number {
   return metric === "bordaScore" ? d.bordaScore : d.mentions;
 }
 
@@ -18,26 +21,31 @@ interface ChartLeaderboardProps {
   data: LeaderboardEntry[];
 }
 
-const BAR_HEIGHT = 36;
+const BAR_HEIGHT = 46;
 const BAR_PADDING = 0.12;
 const SMALL_BAR_HEIGHT = 8;
-const BORDA_FILL = "rgb(70, 130, 180)"; // steelblue – always Borda
-const MENTIONS_FILL = "rgb(218, 124, 88)"; // orange – always Mentions
+const BORDA_FILL = "oklch(0.55 0.12 250)"; // blue – always Borda
+const MENTIONS_FILL = "oklch(0.7952 0.111 54.4)"; // orange – always Mentions
+const LABEL_Y_OFFSET = -3;
 
 export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
   const [width, setWidth] = useState(800);
   const [primaryIsBorda, setPrimaryIsBorda] = useState(true);
-  const primaryMetric: LeaderboardMetric = primaryIsBorda ? "bordaScore" : "mentions";
-  const secondaryMetric: LeaderboardMetric = primaryIsBorda ? "mentions" : "bordaScore";
+  const primaryMetric: LeaderboardMetric = primaryIsBorda
+    ? "bordaScore"
+    : "mentions";
+  const secondaryMetric: LeaderboardMetric = primaryIsBorda
+    ? "mentions"
+    : "bordaScore";
 
   const sortedData = useMemo(
     () =>
       primaryIsBorda
         ? [...data].sort((a, b) => b.bordaScore - a.bordaScore)
         : [...data].sort((a, b) => b.mentions - a.mentions),
-    [data, primaryIsBorda]
+    [data, primaryIsBorda],
   );
 
   useEffect(() => {
@@ -54,7 +62,8 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
   const DURATION = 280;
 
   useEffect(() => {
-    if (!svgRef.current || !containerRef.current || sortedData.length === 0) return;
+    if (!svgRef.current || !containerRef.current || sortedData.length === 0)
+      return;
 
     const d3 = require("d3");
 
@@ -63,7 +72,9 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
     const height = sortedData.length * BAR_HEIGHT;
 
     const root = d3.select(svgRef.current);
-    root.attr("width", width).attr("height", height + margin.top + margin.bottom);
+    root
+      .attr("width", width)
+      .attr("height", height + margin.top + margin.bottom);
 
     let chart = root.select("g.chart-area");
     if (chart.empty()) {
@@ -73,8 +84,10 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
         .attr("transform", `translate(${margin.left},${margin.top})`);
     }
 
-    const maxBorda = d3.max(sortedData, (d: LeaderboardEntry) => d.bordaScore) ?? 1;
-    const maxMentions = d3.max(sortedData, (d: LeaderboardEntry) => d.mentions) ?? 1;
+    const maxBorda =
+      d3.max(sortedData, (d: LeaderboardEntry) => d.bordaScore) ?? 1;
+    const maxMentions =
+      d3.max(sortedData, (d: LeaderboardEntry) => d.mentions) ?? 1;
     const maxVal = Math.max(maxBorda, maxMentions, 1);
     const x = d3.scaleLinear().domain([0, maxVal]).range([0, chartWidth]);
 
@@ -100,7 +113,10 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
           const g = enter
             .append("g")
             .attr("class", "row")
-            .attr("transform", (_: LeaderboardEntry, i: number) => `translate(0, ${rowY(i)})`);
+            .attr(
+              "transform",
+              (_: LeaderboardEntry, i: number) => `translate(0, ${rowY(i)})`,
+            );
           g.each(function (this: SVGGElement, d: LeaderboardEntry) {
             const gr = d3.select(this);
             const bordaW = x(d.bordaScore);
@@ -130,14 +146,17 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (update: any) => update,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (exit: any) => exit.remove()
+        (exit: any) => exit.remove(),
       );
 
     row
       .transition()
       .duration(DURATION)
       .ease(d3.easeCubicInOut)
-      .attr("transform", (_: LeaderboardEntry, i: number) => `translate(0, ${rowY(i)})`);
+      .attr(
+        "transform",
+        (_: LeaderboardEntry, i: number) => `translate(0, ${rowY(i)})`,
+      );
 
     row.each(function (this: SVGGElement, d: LeaderboardEntry) {
       const g = d3.select(this);
@@ -175,11 +194,14 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
 
     row
       .selectAll(".rank")
-      .data((_d: LeaderboardEntry, i: number) => [i], () => "rank")
+      .data(
+        (_d: LeaderboardEntry, i: number) => [i],
+        () => "rank",
+      )
       .join("text")
       .attr("class", "rank")
       .attr("x", -12)
-      .attr("y", bandHeight / 2)
+      .attr("y", bandHeight / 2 + LABEL_Y_OFFSET)
       .attr("text-anchor", "end")
       .attr("dominant-baseline", "middle")
       .style("font-size", "15px")
@@ -188,10 +210,13 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
 
     row
       .selectAll(".label")
-      .data((d: LeaderboardEntry) => [d], () => "label")
+      .data(
+        (d: LeaderboardEntry) => [d],
+        () => "label",
+      )
       .join("text")
       .attr("class", "label")
-      .attr("y", bandHeight / 2)
+      .attr("y", bandHeight / 2 + LABEL_Y_OFFSET)
       .attr("dominant-baseline", "middle")
       .attr("text-anchor", "start")
       .style("font-size", "15px")
@@ -207,8 +232,11 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
       const textWidth = node?.getComputedTextLength?.() ?? d.title.length * 9;
       const labelPadding = 12;
       const fitsInBar = textWidth + labelPadding < barWidth;
-      const labelFill =
-        fitsInBar ? (primaryIsBorda ? "white" : "#1f2937") : "currentColor";
+      const labelFill = fitsInBar
+        ? primaryIsBorda
+          ? "white"
+          : "#1f2937"
+        : "currentColor";
       labelEl
         .attr("x", fitsInBar ? 10 : barWidth + 10)
         .style("fill", labelFill);
@@ -216,11 +244,14 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
 
     row
       .selectAll(".stats")
-      .data((d: LeaderboardEntry) => [d], () => "stats")
+      .data(
+        (d: LeaderboardEntry) => [d],
+        () => "stats",
+      )
       .join("text")
       .attr("class", "stats")
       .attr("x", chartWidth + 8)
-      .attr("y", bandHeight / 2)
+      .attr("y", bandHeight / 2 + LABEL_Y_OFFSET)
       .attr("text-anchor", "start")
       .attr("dominant-baseline", "middle")
       .style("font-size", "13px")
@@ -246,7 +277,9 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
   return (
     <div ref={containerRef} className="w-full">
       <div className="flex items-center gap-3 mb-3">
-        <span className="text-sm text-zinc-600 dark:text-zinc-400">Primary metric</span>
+        <span className="text-sm text-zinc-600 dark:text-zinc-400">
+          Primary metric
+        </span>
         <div
           role="group"
           aria-label="Primary metric"
@@ -265,7 +298,7 @@ export function ChartLeaderboard({ data }: ChartLeaderboardProps) {
               className="size-2 rounded-full shrink-0"
               style={{ backgroundColor: BORDA_FILL }}
             />
-            Borda
+            Borda Score
           </button>
           <button
             type="button"
