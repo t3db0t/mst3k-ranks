@@ -4,7 +4,7 @@ import Image from "next/image";
 export function Header() {
   return (
     <header className="border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
-      <nav className="mx-auto max-w-4xl px-0 py-4 flex gap-6 items-center justify-between">
+      <nav className="px-8 py-4 flex gap-6 items-center justify-between">
         <div className="flex gap-6">
           <Link
             href="/"
