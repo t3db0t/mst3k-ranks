@@ -9,6 +9,9 @@ export interface HeatmapEntry {
   rankDistribution: Record<number, number>;
 }
 
+/** Match leaderboard row height so heatmap rows align visually */
+const CELL_HEIGHT = 36;
+
 interface ChartHeatmapProps {
   data: HeatmapEntry[];
   maxTitles?: number;
@@ -17,13 +20,13 @@ interface ChartHeatmapProps {
 export function ChartHeatmap({ data, maxTitles = 25 }: ChartHeatmapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const svgRef = useRef<SVGSVGElement>(null);
-  const [dimensions, setDimensions] = useState({ width: 600, height: 500 });
+  const [width, setWidth] = useState(800);
 
   useEffect(() => {
     const ro = new ResizeObserver((entries) => {
       for (const entry of entries) {
-        const { width, height } = entry.contentRect;
-        if (width > 0 && height > 0) setDimensions({ width, height });
+        const w = entry.contentRect.width;
+        if (w > 0) setWidth(w);
       }
     });
     if (containerRef.current) ro.observe(containerRef.current);
@@ -37,48 +40,72 @@ export function ChartHeatmap({ data, maxTitles = 25 }: ChartHeatmapProps) {
 
     const topData = data.slice(0, maxTitles);
     const ranks = [1, 2, 3, 4, 5];
-    const maxVal = d3.max(
-      topData.flatMap((d: HeatmapEntry) => ranks.map((r) => d.rankDistribution[r] ?? 0))
-    ) ?? 1;
+    const maxVal =
+      d3.max(
+        topData.flatMap((d: HeatmapEntry) =>
+          ranks.map((r) => d.rankDistribution[r] ?? 0),
+        ),
+      ) ?? 1;
 
-    const margin = { top: 28, right: 30, bottom: 24, left: 200 };
-    const innerWidth = dimensions.width - margin.left - margin.right;
-    const innerHeight = dimensions.height - margin.top - margin.bottom;
+    const margin = { top: 28, right: 24, bottom: 24, left: 200 };
+    const innerWidth = width - margin.left - margin.right;
     const cellWidth = innerWidth / ranks.length;
-    const cellHeight = Math.max(20, innerHeight / topData.length);
+    const cellHeight = CELL_HEIGHT;
+    const chartHeight = topData.length * cellHeight;
     const cellGap = 2;
 
     d3.select(svgRef.current).selectAll("*").remove();
 
     const svg = d3
       .select(svgRef.current)
-      .attr("width", dimensions.width)
-      .attr("height", dimensions.height)
+      .attr("width", width)
+      .attr("height", chartHeight + margin.top + margin.bottom)
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    const colorScale = d3.scaleSequential(d3.interpolateBlues).domain([0, maxVal]);
+    const colorScale = d3
+      .scaleSequential(d3.interpolateBlues)
+      .domain([0, maxVal]);
+
+    // sRGB luminance coefficients (R, G, B); result 0–1. Tweak to change how "dark" is judged.
+    const LUMINANCE_COEFFS = [0.2126, 0.7152, 0.0722] as const;
+    const LUMINANCE_WHITE_THRESHOLD = 0.6;
+
+    function luminanceOf(color: string): number {
+      const c = d3.color(color);
+      if (!c || !("r" in c)) return 1;
+      const rgb = c as { r: number; g: number; b: number };
+      const [kr, kg, kb] = LUMINANCE_COEFFS;
+      return kr * (rgb.r / 255) + kg * (rgb.g / 255) + kb * (rgb.b / 255);
+    }
 
     topData.forEach((row, i) => {
       ranks.forEach((rank, j) => {
         const val = row.rankDistribution[rank] ?? 0;
+        const fill = colorScale(val);
         svg
           .append("rect")
           .attr("x", j * cellWidth + cellGap / 2)
           .attr("y", i * cellHeight + cellGap / 2)
           .attr("width", cellWidth - cellGap)
           .attr("height", cellHeight - cellGap)
-          .attr("fill", colorScale(val))
+          .attr("fill", fill)
           .attr("rx", 2);
         if (val > 0) {
+          const textFill =
+            luminanceOf(fill) < LUMINANCE_WHITE_THRESHOLD ? "white" : "#374151";
           svg
             .append("text")
             .attr("x", j * cellWidth + cellWidth / 2)
             .attr("y", i * cellHeight + cellHeight / 2)
             .attr("text-anchor", "middle")
             .attr("dominant-baseline", "middle")
-            .style("font-size", Math.max(10, cellHeight * 0.4) + "px")
+            .style(
+              "font-size",
+              Math.max(10, Math.round(cellHeight * 0.45)) + "px",
+            )
             .style("font-weight", 600)
+            .style("fill", textFill)
             .text(val);
         }
       });
@@ -91,7 +118,7 @@ export function ChartHeatmap({ data, maxTitles = 25 }: ChartHeatmapProps) {
         .attr("y", i * cellHeight + cellHeight / 2)
         .attr("text-anchor", "end")
         .attr("dominant-baseline", "middle")
-        .style("font-size", Math.max(11, cellHeight * 0.45) + "px")
+        .style("font-size", Math.max(11, Math.round(cellHeight * 0.45)) + "px")
         .text(row.title.length > 32 ? row.title.slice(0, 29) + "…" : row.title);
     });
 
@@ -101,14 +128,14 @@ export function ChartHeatmap({ data, maxTitles = 25 }: ChartHeatmapProps) {
         .attr("x", j * cellWidth + cellWidth / 2)
         .attr("y", -10)
         .attr("text-anchor", "middle")
-        .style("font-size", Math.max(11, cellHeight * 0.35) + "px")
+        .style("font-size", Math.max(11, Math.round(cellHeight * 0.4)) + "px")
         .text(`#${rank}`);
     });
-  }, [data, maxTitles, dimensions]);
+  }, [data, maxTitles, width]);
 
   return (
-    <div ref={containerRef} className="w-full h-[min(60vh,700px)] min-h-[400px]">
-      <svg ref={svgRef} className="w-full h-full block" />
+    <div ref={containerRef} className="w-full">
+      <svg ref={svgRef} className="w-full block" />
     </div>
   );
 }
