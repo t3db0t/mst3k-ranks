@@ -40,7 +40,7 @@ export async function getThreadAnalysis(): Promise<ThreadAnalysis> {
   const commentLists = allMatches.map((m) => m.map((x) => x.canonical));
   const rawGraph = buildNeighborGraph(commentLists);
   const topTitles = new Set(
-    aggregated.slice(0, TOP_N_FOR_GRAPH).map((r) => r.title)
+    aggregated.slice(0, TOP_N_FOR_GRAPH).map((r) => r.title),
   );
   const graph = filterNeighborGraph(rawGraph, {
     minEdgeWeight: MIN_EDGE_WEIGHT,

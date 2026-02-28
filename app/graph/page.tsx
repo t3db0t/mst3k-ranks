@@ -3,6 +3,7 @@ import { ChartNeighborGraph } from "@/components/ChartNeighborGraph";
 import { getThreadAnalysis } from "@/lib/thread";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export default async function GraphPage() {
   const { graph, totalCommentsWithRanks } = await getThreadAnalysis();

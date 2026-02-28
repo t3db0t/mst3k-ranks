@@ -3,6 +3,7 @@ import { ChartHeatmap } from "@/components/ChartHeatmap";
 import { getThreadAnalysis } from "@/lib/thread";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export default async function HeatmapPage() {
   const { results } = await getThreadAnalysis();
