@@ -26,7 +26,7 @@ export function Header() {
           </Link>
         </div>
         <div className="flex gap-6 items-center">
-          <Link href="https://github.com/t3db0t">
+          <Link href="https://github.com/t3db0t/mst3k-ranks">
             <Image
               src="/images/GitHub_Invertocat_Black.svg"
               alt="Github repo"
@@ -34,7 +34,7 @@ export function Header() {
               height={32}
             />
           </Link>
-          <Link href="https://github.com/t3db0t">
+          <Link href="https://www.inventbuild.studio">
             <Image
               src="/images/IBS-logo-medium.svg"
               alt="Github repo"
