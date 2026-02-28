@@ -56,6 +56,14 @@ episodes.json # Whitelist of MST3K episode titles
 /scripts
 getEpisodeList.ts # generates /data/episodes.json
 
+## UX/UI
+
+- There should be a header with links to the different visualizations:
+  - Leaderboard (the index, just a numbered list using the Borda scoring)
+  - Histogram (pan+zoomable since there will be a long tail going off to the right)
+  - Heatmap
+- Each of those should be its own durable route (i.e. permalinkable)
+
 ## Data Source Requirements
 
 Use Reddit public JSON endpoint (no OAuth):

@@ -3,13 +3,15 @@
     "season": 0,
     "episode": 0,
     "titleCanonical": "The Green Slime",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 1,
     "titleCanonical": "Invaders from the Deep",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
@@ -18,13 +20,15 @@
     "titleAlternates": [
       "Captain Scarlet and the Mysterons: \"Shadow of Fear\", \"Lunarville 7\", \"Crater 101\", and \"Dangerous Rendezvous\"",
       "Revenge of the Mysterons from Mars (Captain Scarlet and the Mysterons: \"Shadow of Fear\", \"Lunarville 7\", \"Crater 101\", and \"Dangerous Rendezvous\")"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 3,
     "titleCanonical": "Star Force: Fugitive Alien II",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
@@ -33,13 +37,15 @@
     "titleAlternates": [
       "Daikaijū Kettō: Gamera tai Barugon",
       "Gamera vs. Barugon (Daikaijū Kettō: Gamera tai Barugon)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 5,
     "titleCanonical": "Gamera",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
@@ -48,7 +54,8 @@
     "titleAlternates": [
       "Gamera tai Gyaosu",
       "Gamera vs. Gaos (Gamera tai Gyaosu)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 0,
@@ -57,7 +64,8 @@
     "titleAlternates": [
       "Gamera tai Shinkai Kaijū Jigura",
       "Gamera vs. Zigra (Gamera tai Shinkai Kaijū Jigura)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 0,
@@ -66,19 +74,22 @@
     "titleAlternates": [
       "Gamera tai Daikaijū Giron",
       "Gamera vs. Guiron (Gamera tai Daikaijū Giron)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 9,
     "titleCanonical": "Phase IV",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 10,
     "titleCanonical": "Cosmic Princess",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
@@ -87,73 +98,85 @@
     "titleAlternates": [
       "Cherez ternii k zvyozdam",
       "Humanoid Woman (Cherez ternii k zvyozdam)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 12,
     "titleCanonical": "Fugitive Alien",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 13,
     "titleCanonical": "SST: Death Flight",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 14,
     "titleCanonical": "Mighty Jack",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 15,
     "titleCanonical": "Superdome",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 16,
     "titleCanonical": "City on Fire",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 17,
     "titleCanonical": "Time of the Apes",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 18,
     "titleCanonical": "The Million Eyes of Sumuru",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 19,
     "titleCanonical": "Hangar 18",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 20,
     "titleCanonical": "The Last Chase",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 0,
     "episode": 21,
     "titleCanonical": "The \"Legend of Dinosaurs\"",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 1,
     "episode": 1,
     "titleCanonical": "The Crawling Eye",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 1,
@@ -161,6 +184,9 @@
     "titleCanonical": "The Robot vs. The Aztec Mummy",
     "titleAlternates": [
       "The Robot vs. The Aztec Mummy with short: Radar Men from the Moon, Part 1: \"Moon Rocket\""
+    ],
+    "shorts": [
+      "Radar Men from the Moon, Part 1: Moon Rocket"
     ]
   },
   {
@@ -169,13 +195,17 @@
     "titleCanonical": "The Mad Monster",
     "titleAlternates": [
       "The Mad Monster with short: Radar Men from the Moon, Part 2: \"Molten Terror\""
+    ],
+    "shorts": [
+      "Radar Men from the Moon, Part 2: Molten Terror"
     ]
   },
   {
     "season": 1,
     "episode": 4,
     "titleCanonical": "Women of the Prehistoric Planet",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 1,
@@ -183,13 +213,17 @@
     "titleCanonical": "The Corpse Vanishes",
     "titleAlternates": [
       "The Corpse Vanishes with short: Radar Men from the Moon, Part 3: \"Bridge of Death\""
+    ],
+    "shorts": [
+      "Radar Men from the Moon, Part 3: Bridge of Death"
     ]
   },
   {
     "season": 1,
     "episode": 6,
     "titleCanonical": "The Crawling Hand",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 1,
@@ -197,6 +231,10 @@
     "titleCanonical": "Robot Monster",
     "titleAlternates": [
       "Robot Monster with short: Radar Men from the Moon, Part 4: \"Flight to Destruction\"; Part 5: \"Murder Car\""
+    ],
+    "shorts": [
+      "Radar Men from the Moon, Part 4: Flight to Destruction",
+      "Radar Men from the Moon, Part 5: Murder Car"
     ]
   },
   {
@@ -205,6 +243,9 @@
     "titleCanonical": "The Slime People",
     "titleAlternates": [
       "The Slime People with short: Radar Men from the Moon, Part 6: \"Hills of Death\""
+    ],
+    "shorts": [
+      "Radar Men from the Moon, Part 6: Hills of Death"
     ]
   },
   {
@@ -213,6 +254,10 @@
     "titleCanonical": "Project Moonbase",
     "titleAlternates": [
       "Project Moonbase with short: Radar Men from the Moon, Part 7: \"Camouflaged Destruction\"; Part 8: \"The Enemy Planet\""
+    ],
+    "shorts": [
+      "Radar Men from the Moon, Part 7: Camouflaged Destruction",
+      "Radar Men from the Moon, Part 8: The Enemy Planet"
     ]
   },
   {
@@ -223,31 +268,38 @@
       "Partial",
       "Robot Holocaust (Partial)",
       "Robot Holocaust with short: Radar Men from the Moon, Part 9: \"Battle in the Stratosphere\" (Partial)"
+    ],
+    "shorts": [
+      "Radar Men from the Moon, Part 9: Battle in the Stratosphere (Partial)"
     ]
   },
   {
     "season": 1,
     "episode": 11,
     "titleCanonical": "Moon Zero Two",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 1,
     "episode": 12,
     "titleCanonical": "Untamed Youth",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 1,
     "episode": 13,
     "titleCanonical": "The Black Scorpion",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 2,
     "episode": 1,
     "titleCanonical": "Rocketship X-M",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 2,
@@ -256,7 +308,8 @@
     "titleAlternates": [
       "Five the Hard Way",
       "The Sidehackers (Five the Hard Way)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 2,
@@ -264,13 +317,17 @@
     "titleCanonical": "Jungle Goddess",
     "titleAlternates": [
       "Jungle Goddess with short: The Phantom Creeps, Chapter 1: \"The Menacing Power\""
+    ],
+    "shorts": [
+      "The Phantom Creeps, Chapter 1: The Menacing Power"
     ]
   },
   {
     "season": 2,
     "episode": 4,
     "titleCanonical": "Catalina Caper",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 2,
@@ -278,6 +335,9 @@
     "titleCanonical": "Rocket Attack U.S.A.",
     "titleAlternates": [
       "Rocket Attack U.S.A. with short: The Phantom Creeps, Chapter 2: \"Death Stalks the Highway\""
+    ],
+    "shorts": [
+      "The Phantom Creeps, Chapter 2: Death Stalks the Highway"
     ]
   },
   {
@@ -286,25 +346,31 @@
     "titleCanonical": "Ring of Terror",
     "titleAlternates": [
       "Ring of Terror with short: The Phantom Creeps, Chapter 3: \"Crashing Timbers\""
+    ],
+    "shorts": [
+      "The Phantom Creeps, Chapter 3: Crashing Timbers"
     ]
   },
   {
     "season": 2,
     "episode": 7,
     "titleCanonical": "Wild Rebels",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 2,
     "episode": 8,
     "titleCanonical": "Lost Continent",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 2,
     "episode": 9,
     "titleCanonical": "The Hellcats",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 2,
@@ -312,25 +378,31 @@
     "titleCanonical": "King Dinosaur",
     "titleAlternates": [
       "King Dinosaur with short: X Marks the Spot"
+    ],
+    "shorts": [
+      "X Marks the Spot"
     ]
   },
   {
     "season": 2,
     "episode": 11,
     "titleCanonical": "First Spaceship on Venus",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 2,
     "episode": 12,
     "titleCanonical": "Godzilla vs. Megalon",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 2,
     "episode": 13,
     "titleCanonical": "Godzilla vs. the Sea Monster",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 3,
@@ -339,7 +411,8 @@
     "titleAlternates": [
       "The Blade Master",
       "Cave Dwellers (The Blade Master)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -348,7 +421,8 @@
     "titleAlternates": [
       "Daikaijū Gamera",
       "Gamera (Daikaijū Gamera)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -357,7 +431,8 @@
     "titleAlternates": [
       "Los nuevos extraterrestres",
       "Pod People (Los nuevos extraterrestres)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -366,7 +441,8 @@
     "titleAlternates": [
       "Daikaijū Kessen: Gamera tai Barugon",
       "Gamera vs. Barugon (Daikaijū Kessen: Gamera tai Barugon)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -375,13 +451,15 @@
     "titleAlternates": [
       "The Stranger",
       "Stranded in Space (The Stranger)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
     "episode": 6,
     "titleCanonical": "Time of the Apes",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 3,
@@ -389,6 +467,9 @@
     "titleCanonical": "Daddy-O",
     "titleAlternates": [
       "Daddy-O with short: Alphabet Antics"
+    ],
+    "shorts": [
+      "Alphabet Antics"
     ]
   },
   {
@@ -398,13 +479,15 @@
     "titleAlternates": [
       "Gamera tai Gyaosu",
       "Gamera vs. Gaos (Gamera tai Gyaosu)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
     "episode": 9,
     "titleCanonical": "The Amazing Colossal Man",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 3,
@@ -413,7 +496,8 @@
     "titleAlternates": [
       "Star Wolf",
       "Fugitive Alien (Star Wolf)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -421,6 +505,9 @@
     "titleCanonical": "It Conquered the World",
     "titleAlternates": [
       "It Conquered the World with short: Snow Thrills"
+    ],
+    "shorts": [
+      "Snow Thrills"
     ]
   },
   {
@@ -430,7 +517,8 @@
     "titleAlternates": [
       "Gamera tai Daikaijū Giron",
       "Gamera vs. Guiron (Gamera tai Daikaijū Giron)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -438,13 +526,17 @@
     "titleCanonical": "Earth vs. the Spider",
     "titleAlternates": [
       "Earth vs. the Spider with short: Speech: Using Your Voice"
+    ],
+    "shorts": [
+      "Speech: Using Your Voice"
     ]
   },
   {
     "season": 3,
     "episode": 14,
     "titleCanonical": "Mighty Jack",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 3,
@@ -452,6 +544,9 @@
     "titleCanonical": "Teenage Caveman",
     "titleAlternates": [
       "Teenage Caveman with short: Aquatic Wizards and Catching Trouble"
+    ],
+    "shorts": [
+      "Aquatic Wizards and Catching Trouble"
     ]
   },
   {
@@ -461,7 +556,8 @@
     "titleAlternates": [
       "Gamera tai Shinkai Kaijū Jigura",
       "Gamera vs. Zigra (Gamera tai Shinkai Kaijū Jigura)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -470,14 +566,18 @@
     "titleAlternates": [
       "The Saga of the Viking Women and Their Voyage to the Waters of the Great Sea Serpent",
       "Viking Women and the Sea Serpent (The Saga of the Viking Women and Their Voyage to the Waters of the Great Sea Serpent)",
-      "Viking Women and the Sea Serpent with short: The Home Economics Story{{Cite web|url=https://www.lectures.iastate.edu/lectures/film-home-economics-story|title=Film: The Home Economics Story &#124; Lecture Series &#124; Iowa State University|website=www.lectures.iastate.edu}}"
+      "Viking Women and the Sea Serpent with short: The Home Economics Story"
+    ],
+    "shorts": [
+      "The Home Economics Story"
     ]
   },
   {
     "season": 3,
     "episode": 18,
     "titleCanonical": "Star Force: Fugitive Alien II",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 3,
@@ -485,6 +585,9 @@
     "titleCanonical": "War of the Colossal Beast",
     "titleAlternates": [
       "War of the Colossal Beast with short: Mr. B Natural"
+    ],
+    "shorts": [
+      "Mr. B Natural"
     ]
   },
   {
@@ -493,13 +596,17 @@
     "titleCanonical": "The Unearthly",
     "titleAlternates": [
       "The Unearthly with short: Posture Pals and Appreciating Our Parents"
+    ],
+    "shorts": [
+      "Posture Pals and Appreciating Our Parents"
     ]
   },
   {
     "season": 3,
     "episode": 21,
     "titleCanonical": "Santa Claus Conquers the Martians",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 3,
@@ -508,7 +615,8 @@
     "titleAlternates": [
       "The Master: \"Max\" and \"Out-of-Time Step\"",
       "Master Ninja I (The Master: \"Max\" and \"Out-of-Time Step\")"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -517,7 +625,8 @@
     "titleAlternates": [
       "Die Folterkammer des Dr. Fu Man Chu",
       "The Castle of Fu Manchu (Die Folterkammer des Dr. Fu Man Chu)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 3,
@@ -526,7 +635,8 @@
     "titleAlternates": [
       "The Master: \"State of the Union\" and \"Hostages\"",
       "Master Ninja II (The Master: \"State of the Union\" and \"Hostages\")"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 4,
@@ -535,25 +645,29 @@
     "titleAlternates": [
       "Marooned",
       "Space Travelers (Marooned)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 4,
     "episode": 2,
     "titleCanonical": "The Giant Gila Monster",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 4,
     "episode": 3,
     "titleCanonical": "City Limits",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 4,
     "episode": 4,
     "titleCanonical": "Teenagers from Outer Space",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 4,
@@ -562,7 +676,8 @@
     "titleAlternates": [
       "Time Walker",
       "Being from Another Planet (Time Walker)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 4,
@@ -570,6 +685,9 @@
     "titleCanonical": "Attack of the Giant Leeches",
     "titleAlternates": [
       "Attack of the Giant Leeches with short: Undersea Kingdom, Part 1: \"Beneath the Ocean Floor\""
+    ],
+    "shorts": [
+      "Undersea Kingdom, Part 1: Beneath the Ocean Floor"
     ]
   },
   {
@@ -578,6 +696,9 @@
     "titleCanonical": "The Killer Shrews",
     "titleAlternates": [
       "The Killer Shrews with short: Junior Rodeo Daredevils"
+    ],
+    "shorts": [
+      "Junior Rodeo Daredevils"
     ]
   },
   {
@@ -587,7 +708,8 @@
     "titleAlternates": [
       "Ercole e la regina di Lidia",
       "Hercules Unchained (Ercole e la regina di Lidia)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 4,
@@ -595,6 +717,9 @@
     "titleCanonical": "Indestructible Man",
     "titleAlternates": [
       "Indestructible Man with short: Undersea Kingdom, Part 2: \"The Undersea City\""
+    ],
+    "shorts": [
+      "Undersea Kingdom, Part 2: The Undersea City"
     ]
   },
   {
@@ -604,13 +729,15 @@
     "titleAlternates": [
       "Maciste e la regina di Samar",
       "Hercules Against the Moon Men (Maciste e la regina di Samar)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 4,
     "episode": 11,
     "titleCanonical": "The Magic Sword",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 4,
@@ -619,7 +746,8 @@
     "titleAlternates": [
       "Ercole alla conquista di Atlantide",
       "Hercules and the Captive Women (Ercole alla conquista di Atlantide)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 4,
@@ -629,13 +757,17 @@
       "\"The Pirates of Prah: Chapter I\", \"The Pirates of Prah: Chapter II\" and \"The Pirates of Prah: Chapter III\"",
       "Manhunt in Space (\"The Pirates of Prah: Chapter I\", \"The Pirates of Prah: Chapter II\" and \"The Pirates of Prah: Chapter III\")",
       "Manhunt in Space with short: General Hospital, first installment"
+    ],
+    "shorts": [
+      "General Hospital, first installment"
     ]
   },
   {
     "season": 4,
     "episode": 14,
     "titleCanonical": "Tormented",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 4,
@@ -643,6 +775,9 @@
     "titleCanonical": "The Beatniks",
     "titleAlternates": [
       "The Beatniks with short: General Hospital, second installment"
+    ],
+    "shorts": [
+      "General Hospital, second installment"
     ]
   },
   {
@@ -652,7 +787,8 @@
     "titleAlternates": [
       "Fire Maidens from Outer Space",
       "Fire Maidens of Outer Space (Fire Maidens from Outer Space)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 4,
@@ -662,16 +798,21 @@
       "Rocky Jones, Space Ranger: \"Crash of Moons: Chapter I\", \"Crash of Moons: Chapter II\" and \"Crash of Moons: Chapter III\"",
       "Crash of Moons (Rocky Jones, Space Ranger: \"Crash of Moons: Chapter I\", \"Crash of Moons: Chapter II\" and \"Crash of Moons: Chapter III\")",
       "Crash of Moons with short: General Hospital, third installment"
+    ],
+    "shorts": [
+      "General Hospital, third installment"
     ]
   },
   {
     "season": 4,
     "episode": 18,
-    "titleCanonical": "Attack of the {{sic|hide=y|reason=the duplicate 'the' error is in the title}}The Eye Creatures",
+    "titleCanonical": "Attack of the Eye Creatures",
     "titleAlternates": [
+      "Attack of the The Eye Creatures",
       "The Eye Creatures",
-      "Attack of the {{sic|hide=y|reason=the duplicate 'the' error is in the title}}The Eye Creatures (The Eye Creatures)"
-    ]
+      "Attack of the Eye Creatures (The Eye Creatures)"
+    ],
+    "shorts": []
   },
   {
     "season": 4,
@@ -679,13 +820,17 @@
     "titleCanonical": "The Rebel Set",
     "titleAlternates": [
       "The Rebel Set with short: Johnny at the Fair"
+    ],
+    "shorts": [
+      "Johnny at the Fair"
     ]
   },
   {
     "season": 4,
     "episode": 20,
     "titleCanonical": "The Human Duplicators",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 4,
@@ -693,6 +838,9 @@
     "titleCanonical": "Monster a Go-Go",
     "titleAlternates": [
       "Monster a Go-Go with short: Circus on Ice"
+    ],
+    "shorts": [
+      "Circus on Ice"
     ]
   },
   {
@@ -703,6 +851,9 @@
       "Sampo",
       "The Day the Earth Froze (Sampo)",
       "The Day the Earth Froze with short: Here Comes the Circus"
+    ],
+    "shorts": [
+      "Here Comes the Circus"
     ]
   },
   {
@@ -711,6 +862,9 @@
     "titleCanonical": "Bride of the Monster",
     "titleAlternates": [
       "Bride of the Monster with short: Hired!, Part 1"
+    ],
+    "shorts": [
+      "Hired!, Part 1"
     ]
   },
   {
@@ -719,13 +873,17 @@
     "titleCanonical": "Manos: The Hands of Fate",
     "titleAlternates": [
       "Manos: The Hands of Fate with short: Hired!, Part 2"
+    ],
+    "shorts": [
+      "Hired!, Part 2"
     ]
   },
   {
     "season": 5,
     "episode": 1,
     "titleCanonical": "Warrior of the Lost World",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
@@ -734,7 +892,8 @@
     "titleAlternates": [
       "Le fatiche di Ercole",
       "Hercules (Le fatiche di Ercole)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 5,
@@ -744,6 +903,9 @@
       "Swamp Women",
       "Swamp Diamonds (Swamp Women)",
       "Swamp Diamonds with short: What to Do on a Date"
+    ],
+    "shorts": [
+      "What to Do on a Date"
     ]
   },
   {
@@ -753,7 +915,8 @@
     "titleAlternates": [
       "New York chiama Superdrago",
       "Secret Agent Super Dragon (New York chiama Superdrago)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 5,
@@ -762,13 +925,15 @@
     "titleAlternates": [
       "Sadko",
       "The Magic Voyage of Sinbad (Sadko)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 5,
     "episode": 6,
     "titleCanonical": "Eegah",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
@@ -776,6 +941,9 @@
     "titleCanonical": "I Accuse My Parents",
     "titleAlternates": [
       "I Accuse My Parents with short: The Truck Farmer"
+    ],
+    "shorts": [
+      "The Truck Farmer"
     ]
   },
   {
@@ -785,13 +953,15 @@
     "titleAlternates": [
       "O.K. Connery",
       "Operation Double 007 (O.K. Connery)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 5,
     "episode": 9,
     "titleCanonical": "The Girl in Lovers Lane",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
@@ -799,25 +969,31 @@
     "titleCanonical": "The Painted Hills",
     "titleAlternates": [
       "The Painted Hills with short: Body Care and Grooming"
+    ],
+    "shorts": [
+      "Body Care and Grooming"
     ]
   },
   {
     "season": 5,
     "episode": 11,
     "titleCanonical": "Gunslinger",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
     "episode": 12,
     "titleCanonical": "Mitchell",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
     "episode": 13,
     "titleCanonical": "The Brain That Wouldn't Die",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
@@ -827,6 +1003,9 @@
       "Terror in the Night",
       "Teen-Age Strangler (Terror in the Night)",
       "Teen-Age Strangler with short: Is This Love?"
+    ],
+    "shorts": [
+      "Is This Love?"
     ]
   },
   {
@@ -835,19 +1014,24 @@
     "titleCanonical": "The Wild Wild World of Batwoman",
     "titleAlternates": [
       "The Wild Wild World of Batwoman with short: Cheating"
+    ],
+    "shorts": [
+      "Cheating"
     ]
   },
   {
     "season": 5,
     "episode": 16,
     "titleCanonical": "Alien from L.A.",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
     "episode": 17,
     "titleCanonical": "Beginning of the End",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
@@ -857,6 +1041,9 @@
       "Monstrosity",
       "The Atomic Brain (Monstrosity)",
       "The Atomic Brain with short: What about Juvenile Delinquency?"
+    ],
+    "shorts": [
+      "What about Juvenile Delinquency?"
     ]
   },
   {
@@ -866,7 +1053,8 @@
     "titleAlternates": [
       "Outlaw of Gor",
       "Outlaw (Outlaw of Gor)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 5,
@@ -874,25 +1062,31 @@
     "titleCanonical": "Radar Secret Service",
     "titleAlternates": [
       "Radar Secret Service with short: Last Clear Chance"
+    ],
+    "shorts": [
+      "Last Clear Chance"
     ]
   },
   {
     "season": 5,
     "episode": 21,
     "titleCanonical": "Santa Claus",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
     "episode": 22,
     "titleCanonical": "Teen-Age Crime Wave",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
     "episode": 23,
     "titleCanonical": "Village of the Giants",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 5,
@@ -900,13 +1094,17 @@
     "titleCanonical": "12 to the Moon",
     "titleAlternates": [
       "12 to the Moon with short: Design for Dreaming"
+    ],
+    "shorts": [
+      "Design for Dreaming"
     ]
   },
   {
     "season": 6,
     "episode": 1,
     "titleCanonical": "Girls Town",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 6,
@@ -914,6 +1112,9 @@
     "titleCanonical": "Invasion U.S.A.",
     "titleAlternates": [
       "Invasion U.S.A. with short: A Date with Your Family"
+    ],
+    "shorts": [
+      "A Date with Your Family"
     ]
   },
   {
@@ -922,13 +1123,17 @@
     "titleCanonical": "The Dead Talk Back",
     "titleAlternates": [
       "The Dead Talk Back with short: The Selling Wizard"
+    ],
+    "shorts": [
+      "The Selling Wizard"
     ]
   },
   {
     "season": 6,
     "episode": 4,
     "titleCanonical": "Zombie Nightmare",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 6,
@@ -937,13 +1142,15 @@
     "titleAlternates": [
       "Maciste contro i cacciatori di teste",
       "Colossus and the Headhunters (Maciste contro i cacciatori di teste)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 6,
     "episode": 6,
     "titleCanonical": "The Creeping Terror",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 6,
@@ -951,6 +1158,9 @@
     "titleCanonical": "Bloodlust!",
     "titleAlternates": [
       "Bloodlust! with short: Uncle Jim's Dairy Farm"
+    ],
+    "shorts": [
+      "Uncle Jim's Dairy Farm"
     ]
   },
   {
@@ -959,6 +1169,9 @@
     "titleCanonical": "Code Name: Diamond Head",
     "titleAlternates": [
       "Code Name: Diamond Head with short: A Day at the Fair"
+    ],
+    "shorts": [
+      "A Day at the Fair"
     ]
   },
   {
@@ -967,6 +1180,9 @@
     "titleCanonical": "The Skydivers",
     "titleAlternates": [
       "The Skydivers with short: Why Study Industrial Arts?"
+    ],
+    "shorts": [
+      "Why Study Industrial Arts?"
     ]
   },
   {
@@ -975,19 +1191,24 @@
     "titleCanonical": "The Violent Years",
     "titleAlternates": [
       "The Violent Years with short: Young Man's Fancy"
+    ],
+    "shorts": [
+      "Young Man's Fancy"
     ]
   },
   {
     "season": 6,
     "episode": 11,
     "titleCanonical": "Last of the Wild Horses",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 6,
     "episode": 12,
     "titleCanonical": "The Starfighters",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 6,
@@ -995,19 +1216,24 @@
     "titleCanonical": "The Sinister Urge",
     "titleAlternates": [
       "The Sinister Urge with short: Keeping Clean and Neat"
+    ],
+    "shorts": [
+      "Keeping Clean and Neat"
     ]
   },
   {
     "season": 6,
     "episode": 14,
     "titleCanonical": "San Francisco International",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 6,
     "episode": 15,
     "titleCanonical": "Kitten with a Whip",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 6,
@@ -1015,6 +1241,9 @@
     "titleCanonical": "Racket Girls",
     "titleAlternates": [
       "Racket Girls with short: Are You Ready for Marriage?"
+    ],
+    "shorts": [
+      "Are You Ready for Marriage?"
     ]
   },
   {
@@ -1024,7 +1253,8 @@
     "titleAlternates": [
       "Ilya Muromets",
       "The Sword and the Dragon (Ilya Muromets)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 6,
@@ -1032,6 +1262,9 @@
     "titleCanonical": "High School Big Shot",
     "titleAlternates": [
       "High School Big Shot with short: Out of This World"
+    ],
+    "shorts": [
+      "Out of This World"
     ]
   },
   {
@@ -1042,6 +1275,9 @@
       "Night Train to Mundo Fine",
       "Red Zone Cuba (Night Train to Mundo Fine)",
       "Red Zone Cuba with short: Speech: Platform, Posture, and Appearance"
+    ],
+    "shorts": [
+      "Speech: Platform, Posture, and Appearance"
     ]
   },
   {
@@ -1051,7 +1287,8 @@
     "titleAlternates": [
       "Il raggio infernale",
       "Danger!! Death Ray (Il raggio infernale)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 6,
@@ -1059,6 +1296,9 @@
     "titleCanonical": "The Beast of Yucca Flats",
     "titleAlternates": [
       "The Beast of Yucca Flats with short: Money Talks! and Progress Island USA"
+    ],
+    "shorts": [
+      "Money Talks! and Progress Island USA"
     ]
   },
   {
@@ -1068,7 +1308,8 @@
     "titleAlternates": [
       "Angels' Brigade",
       "Angels Revenge (Angels' Brigade)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 6,
@@ -1076,6 +1317,9 @@
     "titleCanonical": "The Amazing Transparent Man",
     "titleAlternates": [
       "The Amazing Transparent Man with short: The Days of Our Years"
+    ],
+    "shorts": [
+      "The Days of Our Years"
     ]
   },
   {
@@ -1085,7 +1329,8 @@
     "titleAlternates": [
       "Santo vs. las Mujeres Vampiro",
       "Samson vs. the Vampire Women (Santo vs. las Mujeres Vampiro)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 7,
@@ -1093,6 +1338,9 @@
     "titleCanonical": "Night of the Blood Beast",
     "titleAlternates": [
       "Night of the Blood Beast with short: Once Upon a Honeymoon"
+    ],
+    "shorts": [
+      "Once Upon a Honeymoon"
     ]
   },
   {
@@ -1101,6 +1349,9 @@
     "titleCanonical": "The Brute Man",
     "titleAlternates": [
       "The Brute Man with short: The Chicken of Tomorrow"
+    ],
+    "shorts": [
+      "The Chicken of Tomorrow"
     ]
   },
   {
@@ -1110,13 +1361,15 @@
     "titleAlternates": [
       "Deathstalker III: The Warriors from Hell",
       "Deathstalker and the Warriors from Hell (Deathstalker III: The Warriors from Hell)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 7,
     "episode": 4,
     "titleCanonical": "The Incredible Melting Man",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 7,
@@ -1125,91 +1378,106 @@
     "titleAlternates": [
       "Fuga dal Bronx",
       "Escape 2000 (Fuga dal Bronx)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 7,
     "episode": 6,
     "titleCanonical": "Laserblast",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": -1,
     "episode": 0,
     "titleCanonical": "This Island Earth",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 1,
     "titleCanonical": "Revenge of the Creature",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 2,
     "titleCanonical": "The Leech Woman",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 3,
     "titleCanonical": "The Mole People",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 4,
     "titleCanonical": "The Deadly Mantis",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 5,
     "titleCanonical": "The Thing That Couldn't Die",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 6,
     "titleCanonical": "The Undead",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 7,
     "titleCanonical": "Terror from the Year 5000",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 8,
     "titleCanonical": "The She-Creature",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 9,
     "titleCanonical": "I Was a Teenage Werewolf",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 10,
     "titleCanonical": "The Giant Spider Invasion",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 11,
     "titleCanonical": "Parts: The Clonus Horror",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 12,
     "titleCanonical": "The Incredibly Strange Creatures Who Stopped Living and Became Mixed-Up Zombies",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
@@ -1218,7 +1486,8 @@
     "titleAlternates": [
       "Morozko",
       "Jack Frost (Morozko)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 8,
@@ -1227,13 +1496,15 @@
     "titleAlternates": [
       "Gemini Man: \"Smithereens\" and \"Buffalo Bill Rides Again\"",
       "Riding with Death (Gemini Man: \"Smithereens\" and \"Buffalo Bill Rides Again\")"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 15,
     "titleCanonical": "Agent for H.A.R.M.",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
@@ -1242,19 +1513,22 @@
     "titleAlternates": [
       "Yūsei Ōji",
       "Prince of Space (Yūsei Ōji)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 17,
     "titleCanonical": "The Horror of Party Beach",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 18,
     "titleCanonical": "Devil Doll",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
@@ -1263,13 +1537,15 @@
     "titleAlternates": [
       "Uchū Kaisokusen",
       "Invasion of the Neptune Men (Uchū Kaisokusen)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 20,
     "titleCanonical": "Space Mutiny",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 8,
@@ -1278,25 +1554,29 @@
     "titleAlternates": [
       "Tangents",
       "Time Chasers (Tangents)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 8,
     "episode": 22,
     "titleCanonical": "Overdrawn at the Memory Bank",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 9,
     "episode": 1,
     "titleCanonical": "The Projected Man",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 9,
     "episode": 2,
     "titleCanonical": "The Phantom Planet",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 9,
@@ -1305,7 +1585,8 @@
     "titleAlternates": [
       "L'uomo puma",
       "The Pumaman (L'uomo puma)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 9,
@@ -1314,13 +1595,15 @@
     "titleAlternates": [
       "Arizona Werewolf",
       "Werewolf (Arizona Werewolf)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 9,
     "episode": 5,
     "titleCanonical": "The Deadly Bees",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 9,
@@ -1328,25 +1611,31 @@
     "titleCanonical": "The Space Children",
     "titleAlternates": [
       "The Space Children with short: Century 21 Calling"
+    ],
+    "shorts": [
+      "Century 21 Calling"
     ]
   },
   {
     "season": 9,
     "episode": 7,
     "titleCanonical": "Hobgoblins",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 9,
     "episode": 8,
     "titleCanonical": "The Touch of Satan",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 9,
     "episode": 9,
     "titleCanonical": "Gorgo",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 9,
@@ -1355,7 +1644,8 @@
     "titleAlternates": [
       "Quest for the Lost City",
       "The Final Sacrifice (Quest for the Lost City)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 9,
@@ -1364,7 +1654,8 @@
     "titleAlternates": [
       "Shark rosso nell'oceano",
       "Devil Fish (Shark rosso nell'oceano)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 9,
@@ -1372,37 +1663,45 @@
     "titleCanonical": "The Screaming Skull",
     "titleAlternates": [
       "The Screaming Skull with short: Robot Rumpus"
+    ],
+    "shorts": [
+      "Robot Rumpus"
     ]
   },
   {
     "season": 9,
     "episode": 13,
     "titleCanonical": "Quest of the Delta Knights",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 10,
     "episode": 1,
     "titleCanonical": "Soultaker",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 10,
     "episode": 2,
     "titleCanonical": "Girl in Gold Boots",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 10,
     "episode": 3,
     "titleCanonical": "Merlin's Shop of Mystical Wonders",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 10,
     "episode": 4,
     "titleCanonical": "Future War",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 10,
@@ -1411,7 +1710,8 @@
     "titleAlternates": [
       "Zaat",
       "Blood Waters of Dr. Z (Zaat)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 10,
@@ -1420,19 +1720,22 @@
     "titleAlternates": [
       "The Barbaric Beast of Boggy Creek, Part II",
       "Boggy Creek II: And the Legend Continues (The Barbaric Beast of Boggy Creek, Part II)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 10,
     "episode": 7,
     "titleCanonical": "Track of the Moon Beast",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 10,
     "episode": 8,
     "titleCanonical": "Final Justice",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 10,
@@ -1441,7 +1744,8 @@
     "titleAlternates": [
       "Hamlet, Prinz von Dänemark",
       "Hamlet (Hamlet, Prinz von Dänemark)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 10,
@@ -1450,7 +1754,8 @@
     "titleAlternates": [
       "The Bat People",
       "It Lives By Night (The Bat People)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 10,
@@ -1459,7 +1764,8 @@
     "titleAlternates": [
       "Ein Toter hing im Netz",
       "Horrors of Spider Island (Ein Toter hing im Netz)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 10,
@@ -1467,6 +1773,9 @@
     "titleCanonical": "Squirm",
     "titleAlternates": [
       "Squirm with short: A Case of Spring Fever"
+    ],
+    "shorts": [
+      "A Case of Spring Fever"
     ]
   },
   {
@@ -1476,198 +1785,231 @@
     "titleAlternates": [
       "Danger: Diabolik",
       "Diabolik (Danger: Diabolik)"
-    ]
+    ],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 1,
     "titleCanonical": "Reptilicus",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 2,
     "titleCanonical": "Cry Wilderness",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 3,
     "titleCanonical": "The Time Travelers",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 4,
     "titleCanonical": "Avalanche",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 5,
     "titleCanonical": "The Beast of Hollow Mountain",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 6,
     "titleCanonical": "Starcrash",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 7,
     "titleCanonical": "The Land That Time Forgot",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 8,
     "titleCanonical": "The Loves of Hercules",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 9,
     "titleCanonical": "Yongary, Monster from the Deep",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 10,
     "titleCanonical": "Wizards of the Lost Kingdom",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 11,
     "titleCanonical": "Wizards of the Lost Kingdom II",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 12,
     "titleCanonical": "Carnival Magic",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 13,
     "titleCanonical": "The Christmas That Almost Wasn't",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 11,
     "episode": 14,
     "titleCanonical": "At the Earth's Core",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 12,
     "episode": 1,
     "titleCanonical": "Mac and Me",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 12,
     "episode": 2,
     "titleCanonical": "Atlantic Rim",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 12,
     "episode": 3,
     "titleCanonical": "Lords of the Deep",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 12,
     "episode": 4,
     "titleCanonical": "The Day Time Ended",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 12,
     "episode": 5,
     "titleCanonical": "Killer Fish",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 12,
     "episode": 6,
     "titleCanonical": "Ator, the Fighting Eagle",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 1,
     "titleCanonical": "Santo in the Treasure of Dracula",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 2,
     "titleCanonical": "Robot Wars",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 3,
     "titleCanonical": "Beyond Atlantis",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 4,
     "titleCanonical": "Munchie",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 5,
     "titleCanonical": "Doctor Mordrid",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 6,
     "titleCanonical": "Demon Squad",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 7,
     "titleCanonical": "Gamera vs. Jiger",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 9,
     "titleCanonical": "The Million Eyes of Sumuru",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 10,
     "titleCanonical": "H. G. Wells' The Shape of Things to Come",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 11,
     "titleCanonical": "The Mask",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 12,
     "titleCanonical": "The Bubble",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   },
   {
     "season": 13,
     "episode": 13,
     "titleCanonical": "The Christmas Dragon",
-    "titleAlternates": []
+    "titleAlternates": [],
+    "shorts": []
   }
 ]

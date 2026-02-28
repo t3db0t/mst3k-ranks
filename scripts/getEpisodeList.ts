@@ -6,6 +6,7 @@ interface EpisodeEntry {
   episode: number;
   titleCanonical: string;
   titleAlternates: string[];
+  shorts: string[];
 }
 
 /** Looks like a date cell, e.g. "june 6, 1992 (1992-06-06)" */
@@ -27,29 +28,76 @@ function parseSeasonFromHeader(headerTitle: string): number | null {
   return null;
 }
 
-/** Extract titleCanonical (from [[X]]) and titleAlternates (parenthetical, with short, etc.) from RTitle */
+/** Strip wiki markup ([[Link]], [[Link|Display]], {{sic|...}}, etc.) to plain text */
+function stripWiki(str: string): string {
+  return str
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2")
+    .replace(/\[\[([^\]]+)\]\]/g, "$1")
+    .replace(/\{\{sic\|[^}]*\}\}/gi, "") // e.g. {{sic|hide=y|reason=...}}
+    .replace(/\{\{[^}|]+\|[^}]*\}\}/g, "") // other {{name|params}} templates
+    .replace(/\{\{[^}]+\}\}/g, "") // {{name}} no params
+    .replace(/''/g, "")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** Parse "With short(s):" content into array of short titles */
+function parseShorts(rawContent: string): string[] {
+  let content = stripWiki(rawContent);
+  if (!content) return [];
+
+  // Strip surrounding quotes from Part/Chapter titles, e.g. Part 2: "Molten Terror" -> Part 2: Molten Terror
+  content = content.replace(/:\s*["']([^"']+)["']/g, ": $1");
+
+  const segments = content.split(";").map((seg) => seg.trim()).filter(Boolean);
+  if (segments.length === 0) return [];
+
+  // Find series prefix (before first "Part" or "Chapter") for serial shorts
+  const firstMatch = segments[0].match(/^(.+?),?\s*(Part \d+|Chapter \d+)/i);
+  const seriesPrefix = firstMatch ? firstMatch[1].trim() + ", " : "";
+
+  const shorts: string[] = [];
+  for (const seg of segments) {
+    if (seriesPrefix && /^(Part \d+|Chapter \d+)/i.test(seg)) {
+      shorts.push(seriesPrefix + seg);
+    } else {
+      shorts.push(seg);
+    }
+  }
+  return shorts;
+}
+
+/** Extract titleCanonical (from [[X]]), titleAlternates, and shorts from RTitle */
 function parseRTitle(raw: string): {
   titleCanonical: string;
   titleAlternates: string[];
+  shorts: string[];
 } {
   const s = raw.trim();
 
-  // Canonical: the main [[X]] or [[Link|X]] - use display part (X) when pipe present
-  const wikiLinkMatch = s.match(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/);
-  const titleCanonical = wikiLinkMatch
-    ? (wikiLinkMatch[2] || wikiLinkMatch[1]).replace(/''/g, "").trim()
-    : "";
+  // Canonical: the main [[X]] or [[Link|Display]] - use display when pipe present.
+  // Get full content first (templates like {{sic|...}} contain | so we can't use a simple split)
+  const wikiLinkMatch = s.match(/\[\[([\s\S]+?)\]\]/);
+  let rawTitle = "";
+  if (wikiLinkMatch) {
+    const content = wikiLinkMatch[1];
+    // For [[Link|Display]], the pipe is NOT inside {{}}. Replace templates to find the separator.
+    const withoutTemplates = content.replace(/\{\{[^}]*\}\}/g, "\x00");
+    const pipeIdx = withoutTemplates.lastIndexOf("|");
+    rawTitle = (pipeIdx >= 0 ? content.slice(pipeIdx + 1) : content).replace(/''/g, "").trim();
+  }
+  let titleCanonical = stripWiki(rawTitle);
 
   const alternates: string[] = [];
 
-  /** Strip wiki markup ([[Link]], [[Link|Display]]) to plain text */
-  const stripWiki = (str: string) =>
-    str
-      .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2")
-      .replace(/\[\[([^\]]+)\]\]/g, "$1")
-      .replace(/''/g, "")
-      .replace(/<[^>]+>/g, "")
-      .trim();
+  // Fix "the the" duplicate (noted by {{sic}} in source): use corrected form as canonical, keep typo as alternate
+  if (/the the /i.test(titleCanonical)) {
+    alternates.push(titleCanonical);
+    titleCanonical = titleCanonical.replace(/the the /gi, "the ");
+  }
+
+  let shorts: string[] = [];
 
   // Parenthetical alternate - (X) before </small>, e.g. (Daikaijū Kettō: Gamera tai Barugon)
   const parenMatch = s.match(/\(([^)]+)\)\s*<\/small>/);
@@ -57,7 +105,6 @@ function parseRTitle(raw: string): {
     const alt = stripWiki(parenMatch[1]);
     if (alt) {
       alternates.push(alt);
-      // Also add "Title (Parenthetical)" as an alternate for matching
       if (titleCanonical) {
         alternates.push(`${titleCanonical} (${alt})`);
       }
@@ -69,15 +116,18 @@ function parseRTitle(raw: string): {
     /(?:With short|With shorts):\s*([\s\S]+?)(?=<br\s*\/?>|\n|$)/i
   );
   if (withShortMatch) {
-    const shortContent = stripWiki(withShortMatch[1]);
-    if (shortContent && titleCanonical) {
-      alternates.push(`${titleCanonical} with short: ${shortContent}`);
+    const shortContent = withShortMatch[1];
+    shorts = parseShorts(shortContent);
+    const shortContentClean = stripWiki(shortContent);
+    if (shortContentClean && titleCanonical) {
+      alternates.push(`${titleCanonical} with short: ${shortContentClean}`);
     }
   }
 
   return {
     titleCanonical,
     titleAlternates: [...new Set(alternates)],
+    shorts,
   };
 }
 
@@ -146,6 +196,7 @@ function run() {
       episode,
       titleCanonical: parsed.titleCanonical,
       titleAlternates: parsed.titleAlternates,
+      shorts: parsed.shorts,
     });
   }
 
