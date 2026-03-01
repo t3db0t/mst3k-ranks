@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GitHubLogo } from "./GitHubLogo";
 import { IBSLogo } from "./IBSLogo";
+import Image from "next/image";
 
 const REDDIT_THREAD_JSON =
   "https://www.reddit.com/comments/1rgqoys.json?limit=500";
@@ -39,7 +40,13 @@ export function Header() {
   return (
     <header className="border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
       <nav className="px-8 py-4 flex gap-6 items-center justify-between">
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-3 items-center">
+          <Image
+            src="/images/MST3K-logo.png"
+            width={45}
+            height={(310 / 320) * 45}
+            alt="MST3K Logo"
+          />
           <div className="flex flex-col justify-center">
             <div className="text-lg font-bold">MST3K Top 5 Poll Analyzer</div>
             <Link
