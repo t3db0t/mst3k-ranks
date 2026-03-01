@@ -23,7 +23,8 @@ interface RedditThing {
   };
 }
 
-export const THREAD_URL = "https://api.reddit.com/comments/1rgqoys?limit=500";
+const REDDIT_API_URL = "https://www.reddit.com/comments/1rgqoys?limit=500";
+export const THREAD_URL = "https://blue-tree-dd17.t3db0t.workers.dev";
 
 export interface FetchThreadResult {
   comments: RedditComment[];
