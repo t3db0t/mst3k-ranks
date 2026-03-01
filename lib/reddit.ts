@@ -23,7 +23,7 @@ interface RedditThing {
   };
 }
 
-const THREAD_URL = "https://www.reddit.com/comments/1rgqoys.json?limit=1000";
+export const THREAD_URL = "https://api.reddit.com/comments/1rgqoys?limit=500";
 
 export interface FetchThreadResult {
   comments: RedditComment[];

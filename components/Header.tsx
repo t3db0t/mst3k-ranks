@@ -1,8 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+
+const REDDIT_THREAD_JSON =
+  "https://www.reddit.com/comments/1rgqoys.json?limit=500";
 
 const linkClass =
   "text-sm font-medium text-zinc-600 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50 rounded-md px-3 py-2 transition-colors";
@@ -11,6 +15,25 @@ const activeClass =
 
 export function Header() {
   const pathname = usePathname();
+  const [testStatus, setTestStatus] = useState<string | null>(null);
+
+  async function testRedditEndpoint() {
+    setTestStatus("…");
+    try {
+      const res = await fetch(REDDIT_THREAD_JSON);
+      if (res.ok) {
+        const json = await res.json();
+        const commentCount =
+          (Array.isArray(json) ? json[1]?.data?.children?.length : null) ?? "?";
+        setTestStatus(`OK ${res.status} (${commentCount} top-level comments)`);
+      } else {
+        setTestStatus(`Failed: ${res.status}`);
+      }
+    } catch (e) {
+      setTestStatus(e instanceof Error ? e.message : "Error");
+    }
+    setTimeout(() => setTestStatus(null), 5000);
+  }
 
   return (
     <header className="border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
@@ -47,6 +70,16 @@ export function Header() {
           </div>
         </div>
         <div className="flex gap-6 items-center">
+          <div className="flex items-center gap-2">
+            {testStatus !== null && (
+              <span
+                className="text-xs text-zinc-500 dark:text-zinc-400 max-w-[200px] truncate"
+                title={testStatus}
+              >
+                {testStatus}
+              </span>
+            )}
+          </div>
           <Link href="https://github.com/t3db0t/mst3k-ranks">
             <Image
               src="/images/GitHub_Invertocat_Black.svg"

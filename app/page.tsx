@@ -3,7 +3,7 @@ import { ChartLeaderboard } from "@/components/ChartLeaderboard";
 import { getThreadAnalysis } from "@/lib/thread";
 
 export const dynamic = "force-dynamic";
-export const runtime = "nodejs";
+// export const runtime = "nodejs";
 
 export default async function HomePage() {
   const { results, totalComments, totalCommentsWithRanks } =
