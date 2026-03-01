@@ -208,7 +208,7 @@ export function ChartNeighborGraph({ data }: ChartNeighborGraphProps) {
       .attr("dominant-baseline", "middle")
       .style("font-size", "6px")
       .style("pointer-events", "none")
-      .style("fill", "currentColor")
+      .style("fill", "rgb(23 23 23)")
       .text(labelText);
 
     node.each(function (this: SVGGElement) {
@@ -303,7 +303,7 @@ export function ChartNeighborGraph({ data }: ChartNeighborGraphProps) {
     <div ref={containerRef} className="w-full h-full min-h-0">
       <svg
         ref={svgRef}
-        className="w-full h-full block text-zinc-700 dark:text-zinc-300"
+        className="w-full h-full block text-zinc-700 dark:text-zinc-100"
       />
       {tooltipNode && (
         <div

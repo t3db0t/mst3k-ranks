@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { GitHubLogo } from "./GitHubLogo";
+import { IBSLogo } from "./IBSLogo";
 
 const REDDIT_THREAD_JSON =
   "https://www.reddit.com/comments/1rgqoys.json?limit=500";
@@ -80,21 +81,17 @@ export function Header() {
               </span>
             )}
           </div>
-          <Link href="https://github.com/t3db0t/mst3k-ranks">
-            <Image
-              src="/images/GitHub_Invertocat_Black.svg"
-              alt="Github repo"
-              width={32}
-              height={32}
-            />
+          <Link
+            href="https://github.com/t3db0t/mst3k-ranks"
+            className="text-black dark:text-white"
+          >
+            <GitHubLogo className="size-8" />
           </Link>
-          <Link href="https://www.inventbuild.studio">
-            <Image
-              src="/images/IBS-logo-medium.svg"
-              alt="Github repo"
-              width={120}
-              height={(41 / 341) * 120}
-            />
+          <Link
+            href="https://www.inventbuild.studio"
+            className="text-black dark:text-white"
+          >
+            <IBSLogo className="h-4 w-auto" />
           </Link>
         </div>
       </nav>

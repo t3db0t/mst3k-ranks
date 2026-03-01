@@ -119,6 +119,7 @@ export function ChartHeatmap({ data, maxTitles = 25 }: ChartHeatmapProps) {
         .attr("text-anchor", "end")
         .attr("dominant-baseline", "middle")
         .style("font-size", Math.max(11, Math.round(cellHeight * 0.45)) + "px")
+        .style("fill", "currentColor")
         .text(row.title.length > 32 ? row.title.slice(0, 29) + "…" : row.title);
     });
 
@@ -135,7 +136,10 @@ export function ChartHeatmap({ data, maxTitles = 25 }: ChartHeatmapProps) {
 
   return (
     <div ref={containerRef} className="w-full">
-      <svg ref={svgRef} className="w-full block" />
+      <svg
+        ref={svgRef}
+        className="w-full block text-zinc-900 dark:text-zinc-100"
+      />
     </div>
   );
 }
